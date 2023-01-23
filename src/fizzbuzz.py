@@ -1,5 +1,4 @@
 
-
 def convert_int2fizzbuzz(number: int):
     if number == 0:
         return "0"
@@ -16,3 +15,10 @@ def convert_int2fizzbuzz(number: int):
     else:
         return str(number)
 
+
+def main():
+    for num in range(1,101):
+        print(f"{num} : {convert_int2fizzbuzz(num)}")
+
+if __name__ == "__main__":
+    main()
